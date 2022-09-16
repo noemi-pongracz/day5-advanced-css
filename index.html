@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Noemi Pongracz">
+
+    <title>Web Academy - Advanced CSS Homework</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Desktop navbar -->
+    <header class="mainHeader">
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__item nav__logo"><a class="nav__link" href="$">Sunrise SPORT CLUB</a></li>
+                <li class="nav__item"><a class="nav__link" href="$">Add New Member</a></li>
+                <li class="nav__item"><a class="nav__link" href="$">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile navbar -->
+    <header class="mobileHeader">
+        <nav class="nav">
+            <div class="navbar">
+                <a class="nav__item nav__logo nav__link" href="$">Sunrise SPORT CLUB</a>
+                <div class="nav__burgerMenu">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="nav__links-wrapper">
+                <li class="nav__item"><a class="nav__link" href="$">Add New Member</a></li>
+                <li class="nav__item"><a class="nav__link" href="$">Login</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page content -->
+    <main class="mainContent">
+        <aside class="mainContent__aside"></aside>
+        <section class="mainContent__section">
+            <h1 class="mainContent__section__title">Add new member</h1>
+            <hr class="section__divider_thin">
+            <form class="form" action="post">
+                <div class="form-wrapper form__firstNameField">
+                    <label for="first-name" class="form__label">First name</label>
+                    <input type="text" name="first-name" id="first-name" class="form__input">
+                </div>
+                <div class="form-wrapper form__lastNameField">
+                    <label for="last-name" class="form__label">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" class="form__input">
+                </div>
+                <div class="form-wrapper form__addressField">
+                    <label for="address" class="form__label">Address</label>
+                    <input type="text" name="address" id="address" class="form__input">
+                </div>
+                <div class="form-wrapper form__cityField">
+                    <label for="city" class="form__label">City</label>
+                    <input type="text" name="city" id="city" class="form__input">
+                </div>
+                <div class="form-wrapper form__zipCodeField">
+                    <label for="zip-code" class="form__label">Zip code</label>
+                    <input type="text" name="zip-code" id="zip-code" class="form__input">
+                </div>
+                <div class="form-wrapper form__stateField">
+                    <label for="state" class="form__label">State</label>
+                    <input type="text" name="state" id="state" class="form__input">
+                </div>
+                <div class="form-wrapper form__countryField">
+                    <label for="country" class="form__label">Country</label>
+                    <input type="text" name="country" id="country" class="form__input">
+                </div>
+
+                <hr class="section__divider_thick form__dividerBeforeWeight">
+
+                <div class="form-wrapper form__weightField">
+                    <label for="weight" class="form__label">Weight</label>
+                    <input type="text" name="weight" id="weight" class="form__input">
+                </div>
+                <div class="form-wrapper form__genderField">
+                    <label for="gender" class="form__label">Gender</label>
+                    <select name="gender" id="gender" class="form__select">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="transgender">Transgender</option>
+                        <option value="non-binary">Non-binary</option>
+                    </select>
+                </div>
+
+                <div class="checkboxSection form__sportsField">
+                    <h3 class="checkboxSection__title">Practiced sports</h3>
+                    <hr class="section__divider_thick">
+                    <div class="checkboxSection-wrapper">
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport1" id="sport1" value="running">
+                            <label for="sport1">running</label>
+                        </div>
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport2" id="sport2" value="cycling">
+                            <label for="sport2">cycling</label>
+                        </div>
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport3" id="sport3" value="walking">
+                            <label for="sport3">walking</label>
+                        </div>
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport4" id="sport4" value="yoga" checked="true">
+                            <label for="sport4">yoga</label>
+                        </div>
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport5" id="sport5" value="bodybuilding">
+                            <label for="sport5">bodybuilding</label>
+                        </div>
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport6" id="sport6" value="swimming" checked="true">
+                            <label for="sport6">swimming</label>
+                        </div>
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport7" id="sport7" value="skiing">
+                            <label for="sport7">skiing</label>
+                        </div>
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport8" id="sport8" value="golf" checked="true">
+                            <label for="sport8">golf</label>
+                        </div>
+                        <div class="checkboxWithLabel-wrapper">
+                            <input type="checkbox" name="sport9" id="sport9" value="walking">
+                            <label for="sport9">walking</label>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="submit" class="form__submitBtn">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
